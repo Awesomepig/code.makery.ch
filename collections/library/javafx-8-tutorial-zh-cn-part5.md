@@ -483,7 +483,7 @@ public void initRootLayout() {
 
 做应用程序的测试驱动，你应该能够使用菜单保存人员数据到文件中。
 
-当你在编辑器中打开一个`xml`文件，你将注意到生日没有正确保存，这是一个空的`<birthday/>`标签。原因是JAXB不只奥如何转换`LocalDate`到XML。我们必须提供一个自定义的`LocalDateAdapter`定义这个转换。
+当你在编辑器中打开一个`xml`文件，你将注意到生日没有正确保存，这是一个空的`<birthday/>`标签。原因是JAXB不知道如何转换`LocalDate`到XML。我们必须提供一个自定义的`LocalDateAdapter`定义这个转换。
 
 在`ch.makery.address.util`中创建新的类，称为`LocalDateAdapter`，内容如下：
 
